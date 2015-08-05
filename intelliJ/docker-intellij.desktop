@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=IntelliJ
+Comment=Intellij
+Exec=/usr/local/bin/docker-intellij
+Icon=/home/stephane/Intellij-icon.png
+Terminal=false
+Type=Application
+Categories=Utility;Application;

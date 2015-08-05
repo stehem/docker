@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=TorBrowser
+Comment=TorBrowser
+Exec=/usr/local/bin/docker-torbrowser
+Icon=/home/stephane/toricon.png
+Terminal=false
+Type=Application
+Categories=Utility;Application;
