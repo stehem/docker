@@ -1,0 +1,5 @@
+#!/bin/bash
+
+docker rm -v `docker ps -a -q -f status=exited`
+
+docker run -u user -d -v /tmp/.X11-unix:/tmp/.X11-unix:ro  -v $HOME/.Xauthority:/home/user/.Xauthority:ro -e DISPLAY -v $HOME/java:/home/user/java --net=host docker-java
