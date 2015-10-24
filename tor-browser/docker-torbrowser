@@ -2,4 +2,4 @@
 
 docker rm -v `docker ps -a -q -f status=exited`
 
-docker run -u user -d -v /tmp/.X11-unix:/tmp/.X11-unix:ro  -v $HOME/.Xauthority:/home/user/.Xauthority:ro -e DISPLAY  --net=host jess/tor-browser
+docker run -u user -d -v /tmp/.X11-unix:/tmp/.X11-unix:ro  -v $HOME/.Xauthority:/home/user/.Xauthority:ro -v /dev/snd:/dev/snd --privileged -e DISPLAY  --net=host jess/tor-browser
